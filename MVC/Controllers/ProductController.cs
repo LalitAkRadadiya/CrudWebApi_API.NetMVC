@@ -8,9 +8,11 @@ using System.Web.Mvc;
 
 namespace MVC.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         // GET: Product
+        
         public ActionResult Index()
         {
             IEnumerable<mvcProductModel> productList = null;
